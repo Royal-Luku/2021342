@@ -21,9 +21,9 @@ def is_enabled(value, default):
 PORT = environ.get("PORT", "8080")
 WEBHOOK = bool(environ.get("WEBHOOK", True))  # for web support on/off
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '9957263'))
+API_HASH = environ.get('API_HASH', '698b427acaf75b2bdb177c86b76ee58d')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6677267597:AAF9u04oO1C5mxhCx7vRAB59HkeXouGc-lo')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 60))
@@ -32,11 +32,11 @@ PICS = (environ.get('PICS' ,'https://graph.org/file/c3376ab143f7ded215412.jpg'))
 BOT_START_TIME = time()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1782834874').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-100').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6812448168').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002015857012').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', "-1001715616229")
+auth_channel = environ.get('AUTH_CHANNEL', "")
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -84,7 +84,7 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 #request force sub
 REQ_SUB = bool(environ.get("REQ_SUB", True))
-SESSION_STRING = environ.get("SESSION_STRING", "BQDO2s4Asm80_5rpf8usDlkZd8Xc_vlBVcHemP5KlACJFTrYusMQMOWgRMgxTqyLVwGw9QFh1SvV0LTR4AKvN-PB1Tib8u_9ib_zo7nFETBUVDBCqVd2WMDkQifevPZMrZtnwoO8abuVurj5y_FbWJNdMuWQUEUlkOkdZsf3ConED2JcUIF25CUHjGk7ne1QeO8fbkVze3HjzOkVBJ0P-G_Jc0yPJEdn7aWrXMr1bt3IEP-sBK6wCp9BVUYlfjHgzOSghYxionE0p4SBsPC1uuyq853HrrHcc36JjYloDR1syxnIVos6U5vyZPDBjDz4Pv1fjywIcoIt3iPYO8lLY89-4AyvcAAAAAFzH0vbAQ")
+SESSION_STRING = environ.get("SESSION_STRING", "")
 
 
 
