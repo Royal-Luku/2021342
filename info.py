@@ -21,9 +21,9 @@ def is_enabled(value, default):
 PORT = environ.get("PORT", "8080")
 WEBHOOK = bool(environ.get("WEBHOOK", True))  # for web support on/off
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '9957263'))
+API_HASH = environ.get('API_HASH', '698b427acaf75b2bdb177c86b76ee58d')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6711938549:AAHP6ERkyIV4UM_3YclipuQutcBtJUU5cOc')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 60))
@@ -33,7 +33,7 @@ BOT_START_TIME = time()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1782834874').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-100').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002015857012').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL', "-1001715616229")
@@ -48,7 +48,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #maximum search result buttos count in number#
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "5"))
-START_MESSAGE = environ.get('START_MESSAGE', '<b>Hello, {user}\n\nIm {bot}\nExplore, chat, and enjoy the anime world with us ✨</b>')
+START_MESSAGE = environ.get('START_MESSAGE', '<b>Hello, {user}\n\nIm {bot}\nExplore, chat, and enjoy the anime world with us..</b>')
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "Hey, {user},\n\n {query} This Is Not Your Searching Result\nSearch Yourself 👀")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '<b>Hey, {user}\n\nYou Have To Join My Updated Channel To Use Me</b>')
 RemoveBG_API = environ.get("RemoveBG_API", "4atGShH49mDTN5R2fu6xfNZB")
@@ -56,7 +56,7 @@ WELCOM_PIC = environ.get("WELCOM_PIC", "https://graph.org/file/c3376ab143f7ded21
 WELCOM_TEXT = environ.get("WELCOM_TEXT", "<b>Hey, {user}\n\nWelcome to {chat}\n\nDon't Spam Here Dear! Otherwise I will Ban You 😉</b>")
 PMFILTER = environ.get('PMFILTER', "True")
 G_FILTER = bool(environ.get("G_FILTER", True))
-BUTTON_LOCK = environ.get("BUTTON_LOCK", "False")
+BUTTON_LOCK = environ.get("BUTTON_LOCK", "True")
 
 # url shortner
 SHORT_URL = environ.get("SHORT_URL", "")
@@ -64,7 +64,7 @@ SHORT_API = environ.get("SHORT_API", "")
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "180"))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1002088388089"))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Anime_Bash_Chat')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 PM_IMDB = environ.get('PM_IMDB', "False")
@@ -80,11 +80,11 @@ INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True)
 
 #request force sub
 REQ_SUB = bool(environ.get("REQ_SUB", True))
-SESSION_STRING = environ.get("SESSION_STRING", "BQDO2s4Asm80_5rpf8usDlkZd8Xc_vlBVcHemP5KlACJFTrYusMQMOWgRMgxTqyLVwGw9QFh1SvV0LTR4AKvN-PB1Tib8u_9ib_zo7nFETBUVDBCqVd2WMDkQifevPZMrZtnwoO8abuVurj5y_FbWJNdMuWQUEUlkOkdZsf3ConED2JcUIF25CUHjGk7ne1QeO8fbkVze3HjzOkVBJ0P-G_Jc0yPJEdn7aWrXMr1bt3IEP-sBK6wCp9BVUYlfjHgzOSghYxionE0p4SBsPC1uuyq853HrrHcc36JjYloDR1syxnIVos6U5vyZPDBjDz4Pv1fjywIcoIt3iPYO8lLY89-4AyvcAAAAAFzH0vbAQ")
+SESSION_STRING = environ.get("SESSION_STRING", "")
 
 
 
