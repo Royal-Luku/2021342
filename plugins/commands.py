@@ -48,9 +48,8 @@ async def start(client, message):
         m=await message.reply_text("**Welcome To Anime Bash Official Bot!**")
         await asyncio.sleep(1.2)
         await m.delete()
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
+        await message.reply_text(
+            text=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
@@ -95,9 +94,8 @@ async def start(client, message):
         m=await message.reply_text("**Welcome To Anime Bash Official Bot!**")
         await asyncio.sleep(1)
         await m.delete()
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
+        await message.reply_text(
+            text=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
