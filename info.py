@@ -64,7 +64,7 @@ SHORT_API = environ.get("SHORT_API", "")
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "180"))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', "-1002088388089"))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Anime_Bash_Chat')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 PM_IMDB = environ.get('PM_IMDB', "False")
