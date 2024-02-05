@@ -197,7 +197,7 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
             **locals()
         )
     else:
-        cap = f"I think this is your Requested Result `{search}`"
+        cap = f"**Here Is The Results Of `{search}`\n\nJoin Now : @Anime_Bash\nDevoloper : @RoyalDwip\n\nJay Shree Ram Bhai log.. 🕉🚩**"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
