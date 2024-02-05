@@ -1,13 +1,16 @@
 class script(object):   
     HELP_TXT = """<b>Hey {}\nThis Is My Help Section See it </b>"""
 
-    ABOUT_TXT = """<b>☞ Name : {}
-☞ Owner : <a href=https://t.me/Rcbkafan>Path</a>
+    ABOUT_TXT = """<b><i>Here is my About Section...</b>
+
+☞ Name : {}
+☞ Owner : @Rcbkafan
 ☞ Library : Pyrogram
 ☞ Language : Python
 ☞ DataBase : Mongo-DB
 ☞ Bot server : V.P.S
-☞ Version : RoyalV.3.7.1</b>"""
+
+Be by our side always 😘</b>"""
 
     SOURCE_TXT = """<b>Dear,</b>
 - I know Ki Tum Yeha Kyu Aye Hoon But Still I Can't Give You Repo Because Mene isme kuch Changes Kiya Hain So Dafa Ho Jao Yeha Se Agr Ye Msg Padkar tumara dimag kharab ho jaye and tum bot ko block kar do to fhir jab unblock karoge tab tum banned user ke list me chale jayoge 👺</b>"""
