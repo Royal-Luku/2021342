@@ -45,7 +45,7 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
-        m=await message.reply_text("")
+        m=await message.reply_text("**Welcome To Anime Bash Official Bot!**")
         await asyncio.sleep(1.2)
         await m.delete()
         await message.reply_photo(
@@ -92,7 +92,7 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
-        m=await message.reply_text("")
+        m=await message.reply_text("**Welcome To Anime Bash Official Bot!**")
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
