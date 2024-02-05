@@ -526,7 +526,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":                        
         buttons = [[
-            InlineKeyboardButton("About Me", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton("About Me", callback_data="about")
             ],[
             InlineKeyboardButton("Channel", url="https://t.me/anime_bash"),
             InlineKeyboardButton("Group", url="https://t.me/anime_bash_chat")
