@@ -56,7 +56,7 @@ WELCOM_PIC = environ.get("WELCOM_PIC", "https://graph.org/file/c3376ab143f7ded21
 WELCOM_TEXT = environ.get("WELCOM_TEXT", "<b>Hey, {user}\n\nWelcome to {chat}\n\nDon't Spam Here Dear! Otherwise I will Ban You 😉</b>")
 PMFILTER = environ.get('PMFILTER', "True")
 G_FILTER = bool(environ.get("G_FILTER", True))
-BUTTON_LOCK = environ.get("BUTTON_LOCK", "False")
+BUTTON_LOCK = environ.get("BUTTON_LOCK", "True")
 
 # url shortner
 SHORT_URL = environ.get("SHORT_URL", "")
