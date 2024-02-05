@@ -36,7 +36,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002015857012').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', "-1001715616229")
+auth_channel = environ.get('AUTH_CHANNEL', "")
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -48,7 +48,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #maximum search result buttos count in number#
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "5"))
-START_MESSAGE = environ.get('START_MESSAGE', '<b>Hello, {user}\n\nIm {bot}\n\nExplore, chat, and enjoy the anime world with us..\nSo lets Start The Journey...</b>')
+START_MESSAGE = environ.get('START_MESSAGE', "<b>Hello, {user}\n\nIm {bot}\n\nExplore, chat, and enjoy the anime world with us..\nSo lets Start The Journey...</b>")
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "Hey, {user},\n\n {query} This Is Not Your Searching Result\nSearch Yourself 👀")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '<b>Hey, {user}\n\nYou Have To Join My Updated Channel To Use Me</b>')
 RemoveBG_API = environ.get("RemoveBG_API", "4atGShH49mDTN5R2fu6xfNZB")
