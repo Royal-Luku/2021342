@@ -43,12 +43,12 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Raj2345:Raj2345@cluster0.xyai6ld.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "AnimeBash")
+DATABASE_NAME = environ.get('DATABASE_NAME', "animeBash")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #maximum search result buttos count in number#
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "5"))
-START_MESSAGE = environ.get("START_MESSAGE", "<b>Hello, {user}\n\nIm {bot}\n\nExplore, chat, and enjoy the anime world with us.. 🔥\nSo let's start... Write the name of your favorite anime Below!\nExample - `Parasyte: The Maxim S1E1`</b>")
+START_MESSAGE = environ.get('START_MESSAGE', '<b>Hello, {user}\n\nIm {bot}\n\nExplore, chat, and enjoy the anime world with us..\nSo let's start...</b>')
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "Hey, {user},\n\n {query} This Is Not Your Searching Result\nSearch Yourself 👀")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', '<b>Hey, {user}\n\nYou Have To Join My Updated Channel To Use Me</b>')
 RemoveBG_API = environ.get("RemoveBG_API", "4atGShH49mDTN5R2fu6xfNZB")
