@@ -524,17 +524,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit(script.HOW_TO_DOWNLOAD.format(query.from_user.first_name))
 
 
-    elif query.data == "start":                        
-        buttons = [[
-            InlineKeyboardButton("About Me", callback_data="about")
-            ],[
-            InlineKeyboardButton("Channel", url="https://t.me/anime_bash"),
-            InlineKeyboardButton("Group", url="https://t.me/anime_bash_chat")
-        ]]
+    elif query.data == "start":
+        buttons = [
+            [InlineKeyboardButton("About Me", callback_data="about")],
+            [InlineKeyboardButton("Channel", url="https://t.me/anime_bash"), InlineKeyboardButton("Group", url="https://t.me/anime_bash_chat")]
+        ]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.edit_message_media(
-            InputMediaPhoto(random.choice(PICS), START_MESSAGE.format(user=query.from_user.mention, bot=temp.B_LINK), enums.ParseMode.HTML),
+        
+        await query.edit_message_text(
+            text=START_MESSAGE.format(user=query.from_user.mention, bot=temp.B_LINK),
             reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "photo":
         buttons = [[
