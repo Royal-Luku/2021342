@@ -45,8 +45,16 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
-        m=await message.reply_text("**Welcome To Anime Bash Official Bot!**")
-        await asyncio.sleep(1.2)
+        m=await message.reply_text("👀")
+        await asyncio.sleep(0.5)
+        await m.edit_text("**Anime Bash**")
+        await asyncio.sleep(0.5)
+        await m.edit_text("**Welcome To Anime Bash Official Bot ❗❗**")
+        await asyncio.sleep(0.9)
+        await m.edit_text("**जय श्री राम**")
+        await asyncio.sleep(0.5)
+        await m.edit_text("🚩")
+        await asyncio.sleep(1.5)
         await m.delete()
         await message.reply_text(
             text=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
@@ -91,8 +99,16 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
-        m=await message.reply_text("**Welcome To Anime Bash Official Bot!**")
-        await asyncio.sleep(1)
+        m=await message.reply_text("👀")
+        await asyncio.sleep(0.5)
+        await m.edit_text("**Anime Bash**")
+        await asyncio.sleep(0.5)
+        await m.edit_text("**Welcome To Anime Bash Official Bot ❗❗**")
+        await asyncio.sleep(0.9)
+        await m.edit_text("**जय श्री राम**")
+        await asyncio.sleep(0.5)
+        await m.edit_text("🚩")
+        await asyncio.sleep(1.5)
         await m.delete()
         await message.reply_text(
             text=START_MESSAGE.format(user=message.from_user.mention, bot=temp.B_LINK),
