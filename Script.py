@@ -1,7 +1,7 @@
 class script(object):   
     HELP_TXT = """<b>Hey {}\nThis Is My Help Section See it </b>"""
 
-    ABOUT_TXT = """<b><i>Here is my About Section...</b>
+    ABOUT_TXT = """<b><i>Here is my About Section...</i>
 
 ☞ Name : {}
 ☞ Owner : @Rcbkafan
