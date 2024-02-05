@@ -23,27 +23,27 @@ WEBHOOK = bool(environ.get("WEBHOOK", True))  # for web support on/off
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '9957263'))
 API_HASH = environ.get('API_HASH', '698b427acaf75b2bdb177c86b76ee58d')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6677267597:AAF9u04oO1C5mxhCx7vRAB59HkeXouGc-lo')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6711938549:AAG66H0J7VBQ1shmNBlb4MdgIM8TXHmSgKA')
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 60))
+CACHE_TIME = int(environ.get('CACHE_TIME', 30))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS' ,'https://graph.org/file/c3376ab143f7ded215412.jpg')).split()
 BOT_START_TIME = time()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6812448168').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002015857012').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6812448168 1119579816').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001916504009').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', "")
+auth_channel = environ.get('AUTH_CHANNEL', "-1001715616229")
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Raj2345:Raj2345@cluster0.xyai6ld.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "animebash")
+DATABASE_NAME = environ.get('DATABASE_NAME', "AnimeBash")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #maximum search result buttos count in number#
