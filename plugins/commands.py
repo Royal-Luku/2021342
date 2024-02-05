@@ -38,7 +38,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton("About Me!", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton("About Me!", callback_data="about")
             ],[
             InlineKeyboardButton("Channel", url="https://t.me/anime_bash"),
             InlineKeyboardButton("Group", url="https://t.me/anime_bash_chat")
@@ -85,7 +85,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton("About Me!", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton("About Me!", callback_data="about")
             ],[
             InlineKeyboardButton("Channel", url="https://t.me/anime_bash"),
             InlineKeyboardButton("Group", url="https://t.me/anime_bash_chat")
